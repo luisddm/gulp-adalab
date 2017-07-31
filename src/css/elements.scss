@@ -1,0 +1,102 @@
+// Style the list
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: $lighter-gray;
+    font-size: 18px;
+    transition: 0.2s;
+    &:nth-child(odd) {
+      background: darken($lighter-gray, 10%);
+    }
+    &:hover {
+      background: $light-gray;
+    }
+    &.checked {
+      background: $dark-gray;
+      color: $white;
+      text-decoration: line-through;
+      &::before {
+        content: '';
+        position: absolute;
+        border-color: $white;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+      }
+    }
+  }
+}
+
+
+/* Style the close button */
+
+.close {
+  cursor: pointer;
+  padding: 12px 8px 12px 40px;
+  background: $lighter-gray;
+  font-size: 26px;
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 4px 16px;
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+/* Style the header */
+
+.header {
+  background-color: $red;
+  padding: 30px 40px;
+  color: $white;
+  text-align: center;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/* Style the input */
+
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+
+/* Style the 'Add' button */
+
+.task-button {
+  border: 0;
+  padding: 10px;
+  width: 25%;
+  background: $light-gray;
+  color: $darker-gray;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $gray;
+  }
+}

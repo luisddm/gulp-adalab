@@ -1,0 +1,13 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: $lighter-gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Include the padding and border in an element's total width and height */
+
+* {
+  box-sizing: border-box;
+}
