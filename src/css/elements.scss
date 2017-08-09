@@ -15,7 +15,7 @@ ul {
       background: darken($lighter-gray, 10%);
     }
     &:hover {
-      background: $light-gray;
+      background: lighten($red, 20%);
     }
     &.checked {
       background: $dark-gray;
