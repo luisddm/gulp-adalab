@@ -13,7 +13,7 @@ Para usar este ejemplo hay que seguir los siguientes pasos:
 
 - Para ejecutar las tareas que manipulan los scripts y las hojas de estilos una sóla vez, hay que ejecutar `gulp` sin argumentos (véase la tarea 'default').
 
-- Para mantener un servidor HTTP local abierto que fuerce una recarga del navegador cada vez que haya cambios, hay que ejecutar `gulp autoreload`.
+- Para mantener un servidor HTTP local abierto que fuerce una recarga del navegador cada vez que haya cambios, hay que ejecutar `gulp observe`. Esto observará los cambios que se produzcan en los archivos de *src*, forzando una compilación a *dist*. A su vez, la observación de cambios en *dist* forzará una recarga del navegador.
 
 ## Notas
 
