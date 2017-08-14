@@ -9,7 +9,7 @@ Para usar este ejemplo hay que seguir los siguientes pasos:
 
 - Instalar todas las dependencias de npm listadas en *package.json* ejecutando `npm install`.
 
-- Instalar Gulp también de forma global ejecutando `npm -g install gulp` (puede requerir permisos de superusuario, en cuyo caso es necesario poner `sudo` delante). De este modo se podrá usar como comando de sistema.
+- Instalar Gulp también de forma global ejecutando `npm -g install gulp` (puede requerir permisos de superusuario, en cuyo caso es necesario poner `sudo` delante). De este modo se podrá usar como comando de sistema. A partir de npm v5.2.0 también es posible [ejecutar `gulp` de forma local](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) (el que aparece en *package.json*) usando `npx gulp` seguido de las opciones descritas a continuación. Vale para cualquier otro paquete que se ejecute mediante comando y que queramos ejecutar en nuestro proyecto local sin tener que instarlarlo de forma global.
 
 - Para ejecutar las tareas que manipulan los scripts y las hojas de estilos una sóla vez, hay que ejecutar `gulp` sin argumentos (véase la tarea 'default').
 
